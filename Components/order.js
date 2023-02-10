@@ -4,9 +4,22 @@ firebase
   .database()
   .ref("Orders")
   .once("value", async (data) => {
-    var data = Object.values(data.toJSON());
+    if (data.toJSON() == null) {
+      alert("No Orders Available ")
+    }
+    else{
     console.log(data);
+    var data = Object.values(data.toJSON());
+    // if (data == undefined) {
+    //   console.log("No data")
+    // }
+
+
+    // else{
+
     data.map((value) => {
+
+
       console.log(value);
       cards.innerHTML += `
   <tr>
@@ -29,15 +42,20 @@ firebase
   </div>
 </div>
 `;
+
+
     });
+  // }
+}
+
   });
 
 
   const order_res =(e)=>{
-    console.log('Cgange')
-    console.log(e.id)
-    console.log(e.parentNode.id)
-    console.log(e.value)
+    // console.log('Cgange')
+    // console.log(e.id)
+    // console.log(e.parentNode.id)
+    // console.log(e.value)
 firebase.database().ref('Orders').child(e.id).update({
   Order_Status : e.value
 })

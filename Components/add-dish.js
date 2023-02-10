@@ -47,6 +47,7 @@ submit.addEventListener("click", async function (e) {
   // console.log(admin_ID);
   var item_key = firebase.database().ref("Items").push().getKey();
   // console.log(item_key);
+  console.log(Pqty.value)
   await firebase.database().ref("Items").child(item_key).set({
     Item_Name: pname.value,
     Item_Price: Pprice.value,

@@ -86,10 +86,44 @@ width: 90%;
 .sign_btn{
   background-color: #ffa502;
   transition: all 0.5s ease;
-  /* width: 40%; */
+  width: 21%;
+  font-weight: bold;
+  color: black;
+}
+.sign_btn:hover{
+  color: white;
 }
 .order_btn{
   background-color: #e86c06;
   transition: all 0.5s ease;
 
+}
+.account_diff{
+  background-color: #ffa502;
+  transition: all 0.5s ease;
+  color: black;
+}
+.account_diff:hover{
+  color: white;
+}
+/* Navbar UL LI CSS */
+
+span{
+  transition: all 0.5s;
+}
+span:hover {
+    color: #e86c06;
+    font-size: 20px;
+    border-bottom: 1px solid #ffa502;
+    transition: all 0.5s;
+}
+.slider_img{
+  height: 77vh;
+  /* width: 88% !important;  */
+}
+.slide{
+  border: 1px solid red;
+
+  width: 100%;
+  /* height: 77vh !important; */
 }
