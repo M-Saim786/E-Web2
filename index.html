@@ -17,7 +17,7 @@
 
 <body>
     <!-- Alret -->
-    <div class="alert show hide" id="warning">
+    <!-- <div class="alert show hide" id="warning">
         <span class="fas fa-exclamation-circle a_icon"></span>
         <span class="msg" id="wmsg"></span>
         <span class="close-btn" id="close-alert">
@@ -65,13 +65,13 @@
                 </ul>
                 <div class=" px-2" style="width:36%;">
 
-                    <!-- Button trigger modal -->
+                    Button trigger modal
                     <button type="button" class="btn btn-primary sign_btn mx-4" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Sign Up
                     </button>
 
-                    <!-- Modal -->
+                     Modal 
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -116,13 +116,13 @@
                         </div>
                     </div>
 
-                    <!-- Button trigger modal -->
+                  Button trigger modal 
                     <button type="button" class="btn btn-primary sign_btn" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">
                         Sign In
                     </button>
 
-                    <!-- Modal -->
+                   Modal 
                     <div class="modal fade" id="staticBackdrop" data-bs-keyboard="true" tabindex="-1"
                         aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -169,7 +169,7 @@
 
     </nav>
 
-<!-- Slider -->
+ Slider
 <div class="container text-center">
     
     <div id="carouselExampleIndicators" class="carousel slide my-4 text-center" data-bs-ride="true">
@@ -210,7 +210,7 @@
       </div>
     </div>
 
-<!-- Loader -->
+ Loader
 <img src="./0_cWpsf9D3g346Va20.gif" alt="" id="spinner" class="hide">
 
 
@@ -221,16 +221,23 @@
         <div class="row" id="show">
 
         </div>
-    </div>
+    </div> -->
 
+<button onclick="facelog()">Facebook login</button>
+
+    <div id="recaptcha-container"></div>
+
+<input type="text" name="" id="pnum" placeholder="enter phone num" >
+
+<button id="send_code">Send Code</button>
 
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
 
     <script>
-
         const firebaseConfig = {
             apiKey: "AIzaSyD8tJONDRtEpKH5j54AFuavh4zyBXfDFWM",
             authDomain: "ecom-web2.firebaseapp.com",
@@ -239,7 +246,8 @@
             storageBucket: "ecom-web2.appspot.com",
             messagingSenderId: "872481944125",
             appId: "1:872481944125:web:5f05e6fe7686e9da71b054"
-        };
+          };
+          
 
 
         // Initialize Firebase

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" name="" id="code_inp" placeholder="enter code">
+    <button id="verify_code">Verify VCode</button>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyD8tJONDRtEpKH5j54AFuavh4zyBXfDFWM",
+            authDomain: "ecom-web2.firebaseapp.com",
+            databaseURL: "https://ecom-web2-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "ecom-web2",
+            storageBucket: "ecom-web2.appspot.com",
+            messagingSenderId: "872481944125",
+            appId: "1:872481944125:web:5f05e6fe7686e9da71b054"
+          };
+          
+
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
